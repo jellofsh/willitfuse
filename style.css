@@ -98,8 +98,8 @@ html {
     border-radius: 8px;
   }
   
-  /* OCIC image */
-  .ocic {
+  /* Recipe images */
+  .recip_img {
     display: block;
     margin-left: auto;
     margin-right: auto;
