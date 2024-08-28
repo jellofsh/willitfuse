@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Willitfuse</title>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
   <head>
-    <div id = 'index'>
-    <h1> Will It Fuse? </h1>
-    <h3> Navigation: </h3>
-    <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        African <br>
-        Asian<br>
-        European<br>
-        Latin American <br>
-        <li><a href="north_american.html">North American</a></li>
-        <li> <a href="ice_cream.html">Ice Cream</a></li>
-        
-      </ul>
-    </nav>
-    </div>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Willitfuse</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <script src="script.js"></script>
 
-  <h3> Fusion Recipes Gallery: </h3>
-  
-  <div class = 'container'>
-  <a target="_self" href="ocic.html">
-    <img src="https://static.wixstatic.com/media/3f9f6e_9c462f7960a543959ecf6634ce02dc38~mv2.jpg/v1/fill/w_224,h_207,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3f9f6e_9c462f7960a543959ecf6634ce02dc38~mv2.jpg" alt="Orange Cardamom Ice Cream" class = 'image' style="width:50%">
-  </a>
-    <div class = 'middle'> 
-      <div class = 'text'> Orange Cardamom Ice Cream </div>
+  <body>
+    <head>
+      <div id="index">
+        <h1>Will It Fuse?</h1>
+        <!-- side nav-->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="african.html">African</a>
+          <a href="#">Asian</a>
+          <a href="#">European</a>
+          <a href="">Latin American</a>
+          <a href="north_american.html">North American</a>
+          <a href="ice_cream.html">Ice Cream</a>
+        </div>
+
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          >&#9776;
+        </span>
+
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+        
+        <br />
+        
+    <script src="script.js"></script>
+
+    <h3>Fusion Recipes Gallery:</h3>
+
+    <div class="fusion_gallery">
+      <div class="container">
+        <a target="_self" href="ocic.html">
+          <img
+            src="https://static.wixstatic.com/media/3f9f6e_9c462f7960a543959ecf6634ce02dc38~mv2.jpg/v1/fill/w_224,h_207,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3f9f6e_9c462f7960a543959ecf6634ce02dc38~mv2.jpg"
+            alt="Orange Cardamom Ice Cream"
+            class="image"
+            style="width: 50%"
+          />
+        </a>
+        <div class="middle">
+          <div class="text">Orange Cardamom Ice Cream</div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="container">
+        <a target="_self" href="pup.html">
+          <img
+            src="https://static.wixstatic.com/media/3f9f6e_88892dc026494383b9aff3bf29e14486~mv2.jpg/v1/fill/w_281,h_192,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3f9f6e_88892dc026494383b9aff3bf29e14486~mv2.jpg"
+            alt="Orange Cardamom Ice Cream"
+            class="image"
+            style="width: 50%"
+          />
+        </a>
+        <div class="middle">
+          <div class="text">Pumped Up Pasty</div>
+        </div>
+      </div>
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
