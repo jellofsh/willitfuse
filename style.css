@@ -1,107 +1,147 @@
 /* all text */
 html {
-    height: 100%;
-    width: 100%;
-  
-    background: #e2c5a1;
-    color: #3c2f2f;
-    font: normal 18px/1.5 "Poppins SemiBold", Poppins, Arial, sans-serif;
-    font-weight: 600;
-  }
-  
-  /* all images */
-  img {
-    border-radius: 8px;
-    border-style: solid;
-    border-color: #3c2f2f;
-    border-width: 4px;
-  }
+  height: 100%;
+  width: 100%;
 
-  /* about text */
-  #about {
-    margin-right: 30%;
-    border: 3px solid #8D683B;
-    border-width: 4px;
-    padding: 10px;
-    background-color: #f1dcc2;
-    border-radius: 6px;
-  }
+  background: #e2c5a1;
+  color: #3c2f2f;
+  font: normal 18px/1.5 "Poppins SemiBold", Poppins, Arial, sans-serif;
+  font-weight: 600;
+}
 
-  /* recipe history text */
-  .recipe_hist_txt {
-    margin-left: 400px;
-    margin-right: 400px;
-    border: 3px solid #8D683B;
-    border-width: 4px;
-    padding: 50px;
-    background-color: #f1dcc2;
-  }
+/* all images */
+img {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #3c2f2f;
+  border-width: 4px;
+}
 
-  /* cook time information */
-  .cook_time {
-    text-align: center;
-    background-color: #9e7b4d;
-    color: white ;
-  }
+/* about text */
+#about {
+  margin-right: 30%;
+  border: 3px solid #8D683B;
+  border-width: 4px;
+  padding: 10px;
+  background-color: #f1dcc2;
+  border-radius: 6px;
+}
 
-  /* all h1 */
-  h1 {
-    font-weight: 900;
-    background-color: #9e8059d3;
-  }
+/* recipe history text */
+.recipe_hist_txt {
+  /*margin-left: 400px;
+  margin-right: 400px;*/
+  border: 3px solid #8D683B;
+  border-width: 4px;
+  padding: 50px;
+  background-color: #f1dcc2;
+}
 
-  /* all h4 */
-  h4 {
-    text-decoration: underline;
-    display: inline; 
-  }
-  
-  /* fusion recipes gallery */
-  .container {
-    position: relative;
-    width: 50%;
-  }
-  
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-  
-  .container:hover .image {
-    opacity: 0.3;
-  }
-  
-  .container:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
-    background-color: #3c2f2f;
-    color: #d2b99d;
-    font-size: 16px;
-    padding: 16px 16px;
-    text-align: center;
-    border-radius: 8px;
-  }
-  
-  /* Recipe images */
-  .recip_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+/* cook time information */
+.cook_time {
+  text-align: center;
+  background-color: #9e7b4d;
+  color: white ;
+}
+
+/* all h1 */
+h1 {
+  font-weight: 900;
+  background-color: #9e8059d3;
+}
+
+/* all h4 */
+h4 {
+  text-decoration: underline;
+  display: inline; 
+}
+
+/* fusion recipes gallery */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #3c2f2f;
+  color: #d2b99d;
+  font-size: 16px;
+  padding: 16px 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Recipe images */
+.recip_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Side navigation menu */
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #321d14;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #714529;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
